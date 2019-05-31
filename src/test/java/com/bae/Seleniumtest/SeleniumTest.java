@@ -13,7 +13,7 @@ import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.interactions.Actions;
 
-public class Tests {
+public class SeleniumTest {
 	
 	public static WebDriver driver;
 	
@@ -47,7 +47,7 @@ public class Tests {
 		
 		WebElement checkElement4 = driver.findElement(By.xpath("//*[@id=\"isr_chc\"]/div/div/a[1]/div/span"));
 		Thread.sleep(1000);
-	
+		
 		assertEquals("donuts",checkElement4.getText());
 		
 	}
@@ -62,7 +62,6 @@ public class Tests {
 		moveByOffset(0, -100).clickAndHold().moveByOffset(100,0).release().
 		moveByOffset(0,-100).clickAndHold().moveByOffset(0, 200).release().
 		moveByOffset(100,-200).clickAndHold().moveByOffset(0, 200).perform();
-		
 		
 		Thread.sleep(1000);
 		
